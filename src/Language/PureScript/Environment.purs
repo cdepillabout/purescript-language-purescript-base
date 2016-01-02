@@ -1,20 +1,20 @@
 
 module Language.PureScript.Environment where
 
-import Prelude
+import Prelude (bind, ($), (==), (<<<))
 
-import Data.Generic (class Generic, gShow)
-import Data.List
+import Data.List (toList)
 import Data.Map (Map)
 import Data.Map as M
-import Data.Maybe
-import Data.Tuple
+import Data.Maybe (Maybe(Nothing, Just), fromMaybe)
+import Data.Tuple (Tuple(Tuple))
 
-import Language.PureScript.Crash
-import Language.PureScript.Kinds
+import Language.PureScript.Crash (internalError)
+import Language.PureScript.Kinds (Kind(Star, Row, FunKind))
 import Language.PureScript.Names
-import Language.PureScript.TypeClassDictionaries
-import Language.PureScript.Types
+    ( Ident, ModuleName(ModuleName), ProperName(ProperName), Qualified(Qualified) )
+import Language.PureScript.TypeClassDictionaries (TypeClassDictionaryInScope)
+import Language.PureScript.Types (Constraint, Type(TypeApp, TypeConstructor))
 import Language.PureScript.Constants (prim)
 
 newtype Environment = Environment {

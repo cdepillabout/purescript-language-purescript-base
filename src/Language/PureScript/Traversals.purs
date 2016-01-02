@@ -1,10 +1,10 @@
 module Language.PureScript.Traversals where
 
-import Prelude
+import Prelude (class Applicative, class Functor, bind, pure, (<$>), (<*>), flip)
 
-import Data.Either
-import Data.Maybe
-import Data.Tuple
+import Data.Either (Either(Right, Left))
+import Data.Maybe (Maybe(Just, Nothing))
+import Data.Tuple (Tuple(Tuple))
 
 fstM :: forall f a b c . (Functor f) => (a -> f c) -> Tuple a b -> f (Tuple c b)
 fstM f (Tuple a b) = flip Tuple b <$> f a

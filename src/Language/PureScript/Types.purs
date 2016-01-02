@@ -4,7 +4,6 @@ module Language.PureScript.Types where
 import Prelude
     ( class Monad, class Applicative, class Functor, class Eq, class Show, bind
     , map, ($), (>>=), (<$>), (<*>), pure, (<<<), (||), (<>), show, (+), (/=)
-    , eq
     )
 
 import Control.Bind ((<=<))
