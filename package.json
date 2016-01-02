@@ -1,6 +1,6 @@
 {
   "name": "purescript-language-purescript-base",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "base modules for the purescript-in-purescript compiler",
   "main": "index.js",
   "scripts": {

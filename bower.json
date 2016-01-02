@@ -1,6 +1,6 @@
 {
   "name": "purescript-language-purescript-base",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "moduleType": [
     "node"
   ],
@@ -17,5 +17,9 @@
     "purescript-exceptions": "^0.3",
     "purescript-generics": "^0.7",
     "purescript-maps": "^0.5"
+  },
+  "repository": {
+      "type": "git",
+      "url": "git://github.com/cdepillabout/purescript-language-purescript-base.git"
   }
 }
