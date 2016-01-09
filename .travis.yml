@@ -7,7 +7,7 @@ install:
     - export PATH="node_modules/.bin:$PATH"
     - psc --version
     - pulp --version
-    - pulp dep update
+    - bower install
 script:
     - pulp build
     # - pulp test
