@@ -12,7 +12,7 @@ This library provides base modules for the PureScript compiler.
 
 ```sh
 $ npm install bower
-$ ./node_modules/.bin/bower install --save purescript-monad-supply
+$ ./node_modules/.bin/bower install --save purescript-language-purescript-base
 ```
 
 ### Building / Testing
